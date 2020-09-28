@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="37dp"
+        android:text="FICHA DE GIMNASIO"
+        app:layout_constraintBottom_toTopOf="@+id/ptnombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ptcontextura"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvfecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvcontextura"
+        app:layout_constraintTop_toBottomOf="@+id/ptnombre" />
+
+    <EditText
+        android:id="@+id/ptpeso"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="138dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/btnfoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvpeso"
+        app:layout_constraintTop_toTopOf="@+id/ptnombre"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/tvcontextura"
+        app:layout_constraintEnd_toStartOf="@+id/ptnombre"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvpeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="89dp"
+        android:text="Peso"
+        app:layout_constraintEnd_toStartOf="@+id/ptpeso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvaltura" />
+
+    <EditText
+        android:id="@+id/ptnombre"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ptcontextura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvnombre"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitulo" />
+
+    <TextView
+        android:id="@+id/tvaltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="85dp"
+        android:text="Altura"
+        app:layout_constraintEnd_toStartOf="@+id/ptaltura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfecha" />
+
+    <TextView
+        android:id="@+id/tvfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="4dp"
+        android:text="Fecha Nacimiento"
+        app:layout_constraintBottom_toTopOf="@+id/ptaltura"
+        app:layout_constraintEnd_toStartOf="@+id/ptfecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptcontextura" />
+
+    <TextView
+        android:id="@+id/tvcontextura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="18dp"
+        android:text="Contextura"
+        app:layout_constraintBottom_toTopOf="@+id/tvfecha"
+        app:layout_constraintEnd_toStartOf="@+id/ptcontextura"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ptaltura"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="107dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnfoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvaltura"
+        app:layout_constraintTop_toBottomOf="@+id/tvfecha" />
+
+    <EditText
+        android:id="@+id/ptfecha"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ptaltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvfecha"
+        app:layout_constraintTop_toBottomOf="@+id/ptnombre"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="67dp"
+        android:text="Registrate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnfoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnfoto" />
+
+    <Button
+        android:id="@+id/btnfoto"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="69dp"
+        android:text="Tomar Foto"
+        app:layout_constraintBottom_toTopOf="@+id/ivmagen"
+        app:layout_constraintEnd_toStartOf="@+id/btnregistrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptaltura" />
+
+    <ImageView
+        android:id="@+id/ivmagen"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfoto"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
